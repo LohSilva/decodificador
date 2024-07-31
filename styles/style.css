@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek Kannada:wght@400&display=swap');
+
+:root {
+    --cor-primaria: #050E5D;
+    --cor-secundaria: #988DFF;
+    --cor-terciaria: #FFFFFF;
+    --cor-hover: #6866E1;
+    --fonte-primaria: 'Anek Kannada', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: var(--cor-secundaria);
+    background-image: url("../assets/fundo_tech.jpg");  
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.container {
+    padding: 1% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    gap: 30px; 
+}
+
+.contaniner_conteudo_entrada,
+.container_conteudo_saida {
+    display: flex;     
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 5px;
+}
+
+textarea, .container_saida {
+    width: 700px;
+    max-width: 700px;
+    height: 300px;
+    border: 1px solid var(--cor-terciaria);
+    border-radius: 8px;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem; 
+    overflow-y: auto;  
+    margin-bottom: 5px; 
+}
+
+.container_saida {
+    background-image: url("../assets/area_transferencia.png"); 
+    background-repeat: no-repeat;
+    background-position: center right;
+    display: flex;
+    align-items: center;
+    padding: 10px; 
+}
+
+.mensagem {
+    font-family: var(--fonte-primaria);
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.container_input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    margin-top: 5px;  
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 8px;
+    font-family: var(--fonte-primaria);
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 1.3;
+}
+
+button:hover {
+    background-color: var(--cor-hover);
+    color: var(--cor-primaria);
+}
+
+.container_button {
+    align-self: center;      
+    margin-top: 5px;
+}
+
+.mensagem_informativa {
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-primaria);
+    font-size: 0.7rem; 
+    display: flex;
+    align-items: center; 
+}
+
+.rodape {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: var(--cor-terciaria);
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 5px 20px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container_conteudo_saida {
+        width: 90%;
+    }
+
+    textarea, .container_saida {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .container_conteudo_saida {
+        width: 100%;
+    }
+
+    textarea, .container_saida {
+        width: 100%;
+        height: 200px;
+    }
+
+    .container_input {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .container_button {
+        margin-top: 10px;
+    }
+}

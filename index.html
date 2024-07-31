@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodifique-se</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="container_conteudo_entrada">
+            <textarea id="entradaTexto" rows="5" cols="30" placeholder="Digite seu texto"></textarea>                 
+            <div class="container_input">
+                <button onclick="criptografar()">Criptografar</button>
+                <button onclick="descriptografar()">Descriptografar</button>      
+            </div> 
+        </section>
+        <section class="container_conteudo_saida">
+            <div class="container_saida" id="saidaTexto">
+                <p class="mensagem"><strong>Nenhuma mensagem encontrada.</strong><br> Digite um texto que você deseja<br>
+                     criptografar ou descriptografar.</p></div>                     
+            <button onclick="copiaTexto()" class="container_button">Copiar</button> 
+            <p class="mensagem_informativa">Apenas letras minúsculas e sem acento.</p>
+        </section>        
+        <script src="app.js"></script>
+    </main>    
+</body>
+<footer class="rodape">   
+    <p>2024 - Desenvolvido por Lo-Ruama.</p>    
+</footer>
+</html>
