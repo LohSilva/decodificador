@@ -19,7 +19,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     color: var(--cor-secundaria);
-    background-image: url("../assets/fundo_tech.jpg");  
+    background-image: url("../assets/fundo_tech.jpg"); 
 }
 
 main {
@@ -178,3 +178,44 @@ button:hover {
         margin-top: 10px;
     }
 }
+
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10%;
+    }
+
+    .container_conteudo_saida {
+        width: 100%;
+        gap: 10px;
+    }
+
+    textarea, .container_saida {
+        width: 100%;
+        height: 150px;
+    }
+
+    .container_input {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .mensagem_informativa {
+        font-size: 0.6rem;
+    }
+
+    .rodape {
+        font-size: 0.8rem;
+        padding: 10px; 
+    }
+}
+
+
