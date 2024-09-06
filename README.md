@@ -36,7 +36,7 @@ As "chaves" de **criptografia** que utilizaremos são:
 - O texto descriptografado será exibido na área de saída.
 
 ### Copiar Texto:
-- Após criptografar ou descriptografar, você pode usar a funcionalidade de copiar texto e colcar o texto em qualquer lugar que lugar.
+- Após criptografar ou descriptografar, você pode usar a funcionalidade de copiar texto e colar o texto em qualquer lugar.
 - Subirá um alerta de "Texto copiado com sucesso!".
 
 ## **Conclusão:**
